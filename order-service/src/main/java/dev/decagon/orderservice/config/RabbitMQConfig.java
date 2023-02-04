@@ -29,13 +29,11 @@ public class RabbitMQConfig {
     // spring bean for rabbitmq order and email queue
     @Bean
     public Queue orderQueue(){
-
         return new Queue(orderQueueName);
     }
 
     @Bean
     public Queue emailQueue(){
-
         return new Queue(emailQueueName);
     }
 
@@ -65,7 +63,6 @@ public class RabbitMQConfig {
 
     @Bean
     public MessageConverter converter(){
-
         return new Jackson2JsonMessageConverter();
     }
 
